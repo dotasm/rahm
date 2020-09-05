@@ -1,0 +1,44 @@
+2020-09-05 11:11:45 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:ranch_acceptors_sup/1
+    pid: <0.164.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,eacces}},[{ranch_acceptors_sup,init,1,[{file,"src/ranch_acceptors_sup.erl"},{line,30}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.162.0>,ranch_sup,<0.153.0>]
+    messages: []
+    links: [<0.162.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 711
+  neighbours:
+2020-09-05 11:11:45 =SUPERVISOR REPORT====
+     Supervisor: {<0.162.0>,ranch_listener_sup}
+     Context:    start_error
+     Reason:     {{badmatch,{error,eacces}},[{ranch_acceptors_sup,init,1,[{file,"src/ranch_acceptors_sup.erl"},{line,30}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,undefined},{id,ranch_acceptors_sup},{mfargs,{ranch_acceptors_sup,start_link,[http,100,ranch_tcp,[{ip,{0,0,0,0}},{port,80}]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
+2020-09-05 11:55:51 =CRASH REPORT====
+  crasher:
+    initial call: supervisor:ranch_acceptors_sup/1
+    pid: <0.164.0>
+    registered_name: []
+    exception exit: {{{badmatch,{error,eacces}},[{ranch_acceptors_sup,init,1,[{file,"src/ranch_acceptors_sup.erl"},{line,30}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,352}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.162.0>,ranch_sup,<0.153.0>]
+    messages: []
+    links: [<0.162.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 711
+  neighbours:
+2020-09-05 11:55:51 =SUPERVISOR REPORT====
+     Supervisor: {<0.162.0>,ranch_listener_sup}
+     Context:    start_error
+     Reason:     {{badmatch,{error,eacces}},[{ranch_acceptors_sup,init,1,[{file,"src/ranch_acceptors_sup.erl"},{line,30}]},{supervisor,init,1,[{file,"supervisor.erl"},{line,287}]},{gen_server,init_it,6,[{file,"gen_server.erl"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,undefined},{id,ranch_acceptors_sup},{mfargs,{ranch_acceptors_sup,start_link,[http,100,ranch_tcp,[{ip,{0,0,0,0}},{port,80}]]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]
+
